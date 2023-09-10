@@ -1,0 +1,17 @@
+{
+  "template": "TopBottomLeftPanel",
+  "images": [
+    {
+      "id": 1,
+      "url": "https://media.wired.co.uk/photos/606d9a3ba876dd2203a639aa/4:3/w_2664,h_1998,c_limit/wired-uk-google-watching.jpg"
+    },
+    {
+      "id": 2,
+      "url": "https://cdnwpedutorenews.gramedia.net/wp-content/uploads/2022/01/12131453/google-2.png"
+    },
+    {
+      "id": 3,
+      "url": "https://cdn.eraspace.com/pub/media/mageplaza/blog/post/a/p/apa_itugoogleworkspace.png"
+    }
+  ]
+}
