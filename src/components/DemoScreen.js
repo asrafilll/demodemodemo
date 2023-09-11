@@ -1,12 +1,11 @@
 import TopBottomLeftPanel from "./TopBottomLeftPanel";
-import FullScreen from "./FullScreen";
+import FullScreen from "../pages/FullScreen";
 import TopBottom from "./TopBottom";
 import LeftRight from "./LeftRight";
-import HeaderContentFooter from "./HeaderContentFooter";
+import HeaderContentFooter from "../pages/HeaderContentFooter";
 import TopBottomRightPanel from "./TopBottomRightPanel";
 import DefaultError from "./DefaultError";
 import { useState } from "react";
-import { SwitchButton } from "./SwitchButton";
 
 const templateComponents = {
   1: <FullScreen />,
@@ -31,7 +30,6 @@ export default function DemoScreen() {
   return (
     <div className="flex flex-col w-screen h-screen items-center">
       {selectedComponent}
-      <SwitchButton onChangeTemplate={handleTemplateChange} />
     </div>
   );
 }

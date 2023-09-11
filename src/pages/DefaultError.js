@@ -1,5 +1,3 @@
-import { SwitchButton } from "./SwitchButton";
-
 export default function DefaultError() {
   return (
     <div className="w-screen h-screen flex flex-col items-center justify-center">
