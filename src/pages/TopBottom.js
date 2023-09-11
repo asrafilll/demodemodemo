@@ -13,7 +13,9 @@ export default function TopBottom() {
 
       <div className="h-1/2">
         <ReactPlayer
-          url="http://13.251.246.148/video/example.mp4"
+          url="https://youtu.be/ZSt9tm3RoUU4"
+          playing={true}
+          loop={true}
           width="100%"
           height="100%"
           className="w-full h-full object-center object-cover"
