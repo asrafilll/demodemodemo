@@ -1,25 +1,15 @@
-import React from "react";
-import ReactPlayer from "react-player";
+import { Content } from "../components/Content";
 
-export default function TopBottom() {
+export default function TopBottom({ contents }) {
+  const content1 = contents.find((content) => +content.position === 1);
+  const content2 = contents.find((content) => +content.position === 2);
   return (
     <div className="w-screen h-screen">
       <div id="1" className="h-1/2">
-        <img
-          src="https://images.unsplash.com/photo-1694187068493-174431d09d2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2832&q=80"
-          className="w-full h-full object-center object-cover"
-        />
+        <Content content={content1} />
       </div>
-
       <div className="h-1/2">
-        <ReactPlayer
-          url="https://youtu.be/ZSt9tm3RoUU4"
-          playing={true}
-          loop={true}
-          width="100%"
-          height="100%"
-          className="w-full h-full object-center object-cover"
-        />
+        <Content content={content2} />
       </div>
     </div>
   );
